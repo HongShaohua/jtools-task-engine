@@ -3,14 +3,14 @@
     <parent>
         <groupId>com.hongshaohua.jtools</groupId>
         <artifactId>jtools-parent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0-SNAPSHOT</version>
         <relativePath></relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hongshaohua.jtools</groupId>
     <artifactId>jtools-task-engine</artifactId>
-    <version>1.0.0</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>jtools-task-engine</name>
@@ -26,6 +26,11 @@
             <artifactId>junit</artifactId>
             <version>3.8.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.25</version>
         </dependency>
     </dependencies>
 </project>
