@@ -33,9 +33,7 @@ public class TaskQueueLockLimit extends TaskQueueLockTop {
             try {
                 this.addLock.lock();
                 while(this.size() >= this.limit) {
-                    System.out.println("addCondition await " + Thread.currentThread().getId());
                     this.addCondition.await();
-                    System.out.println("addCondition await " + Thread.currentThread().getId() + " finished");
                     if(this.isExit()) {
                         return;
                     }

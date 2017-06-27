@@ -10,7 +10,7 @@ class TaskQueue {
 	private int size;
 	
 	public TaskQueue() {
-		this.tasksMap = new TreeMap<Integer, List<Task>>();
+		this.tasksMap = new TreeMap<>();
 		this.size = 0;
 	}
 	

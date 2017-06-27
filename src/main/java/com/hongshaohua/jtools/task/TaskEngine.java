@@ -4,6 +4,8 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class TaskEngine {
+
+	private static final int DEFAULT_LIMIT = 10000;
 	private int threads = 0;
 	private int limit = 0;
 
@@ -15,7 +17,11 @@ public class TaskEngine {
 
 	
 	public TaskEngine() {
-		this(Runtime.getRuntime().availableProcessors()*2, 1000);
+		this(DEFAULT_LIMIT);
+	}
+
+	public TaskEngine(int limit) {
+		this(Runtime.getRuntime().availableProcessors()*2, limit);
 	}
 
 	public TaskEngine(int threads, int limit) {

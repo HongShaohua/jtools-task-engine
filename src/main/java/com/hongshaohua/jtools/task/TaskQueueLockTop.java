@@ -24,9 +24,7 @@ public class TaskQueueLockTop extends TaskQueueLockExit {
             try {
                 this.topLock.lock();
                 while(this.isEmpty()) {
-                    System.out.println("topCondition await " + Thread.currentThread().getId());
                     this.topCondition.await();
-                    System.out.println("topCondition await " + Thread.currentThread().getId() + " finished");
                     if(this.isExit()) {
                         return null;
                     }

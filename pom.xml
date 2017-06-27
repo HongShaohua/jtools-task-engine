@@ -32,5 +32,10 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.7.25</version>
         </dependency>
+        <dependency>
+            <groupId>com.hongshaohua.jtools</groupId>
+            <artifactId>jtools-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 </project>
