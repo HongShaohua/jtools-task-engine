@@ -10,7 +10,7 @@
 
     <groupId>com.hongshaohua.jtools</groupId>
     <artifactId>jtools-task-engine</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>jar</packaging>
 
     <name>jtools-task-engine</name>
@@ -35,7 +35,7 @@
         <dependency>
             <groupId>com.hongshaohua.jtools</groupId>
             <artifactId>jtools-common</artifactId>
-            <version>1.0.1</version>
+            <version>1.0.3</version>
         </dependency>
     </dependencies>
 </project>
